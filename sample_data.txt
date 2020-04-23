@@ -1,0 +1,20 @@
+db.users.insertMany(
+{ "_id" : "04d6a537fcdb42e8b48bd8a78b5fd759", "email" : "mark@gfs.com", "password" : "pass123" },
+{ "_id" : "80f8298b4987408280f2117f899a44a6", "email" : "bill@foo.com", "password" : "pass123" }
+)
+db.blogs.insertMany(
+{ "_id" : "21ab3abc71c8414082fe8726a3f011bd", "author_id" : "04d6a537fcdb42e8b48bd8a78b5fd759", "author" : "Mark", "title" : "Mark's Blog", "description" : "The Ultimate Source of Truth" },
+{ "_id" : "8351f4b7042f41d89b995f87ac846a91", "author_id" : "04d6a537fcdb42e8b48bd8a78b5fd759", "author" : "Mark", "title" : "Mark's Other Blog", "description" : "The Penultimate Source of Truth" },
+{ "_id" : "7946f4b7042f41d89b995f87ac84ffa3", "author_id" : "04d6a537fcdb42e8b48bd8a78b5fd759", "author" : "Mark", "title" : "This, That and The Other", "description" : "A Compendium of Truthiness" },
+{ "_id" : "79f3d61469a448638d822653ffc6619d", "author" : "mark@gfs.com", "author_id" : "04d6a537fcdb42e8b48bd8a78b5fd759", "title" : "Pithy Aphorisms", "description" : "A small sample of my vast wit and wisdom" },
+{ "_id" : "01a17b1f372e49b6a636de63ea98ccd9", "author" : "bill@foo.com", "author_id" : "80f8298b4987408280f2117f899a44a6", "title" : "Is this humble enough?", "description" : "Please don't hurt me!" }
+)
+db.posts.insertMany(
+{ "_id" : "9668967f73e446bca0dfaf922ce672a8", "blog_id" : "21ab3abc71c8414082fe8726a3f011bd", "title" : "Why I'm always right", "content" : "You can agree with me, or you can be wrong. The choice is yours.", "created_date" : ISODate("2020-04-22T20:28:52.496Z"), "author" : "Mark" },
+{ "_id" : "58abcf451071463886dab9fb0be30e97", "blog_id" : "21ab3abc71c8414082fe8726a3f011bd", "title" : "The burden of perfection", "content" : "I gladly bear it for the good of humanity, but few are actually capable of appreciating or even understanding it.", "created_date" : ISODate("2020-04-22T00:00:00Z"), "author" : "Mark" },
+{ "_id" : "60b35fbf26004a61b5b3774c60e2b8fb", "blog_id" : "8351f4b7042f41d89b995f87ac846a91", "title" : "I was wrong once", "content" : "I had thought I was wrong about something.", "created_date" : ISODate("2020-04-22T00:00:00Z"), "author" : "Mark" },
+{ "_id" : "e2c533d4112c4f84964bf978ad1ac8fd", "blog_id" : "8351f4b7042f41d89b995f87ac846a91", "title" : "The importance of always agreeing with me", "content" : "I mean, it's just pointless and a waste of time to do otherwise.", "created_date" : ISODate("2020-04-22T14:42:17.077Z"), "author" : "Mark" },
+{ "_id" : "f0ecc52174bd42e8abe29ce6f870b988", "blog_id" : "21ab3abc71c8414082fe8726a3f011bd", "author" : "mark@gfs.com", "content" : "It's only confirmation bias if it doesn't apply to me.", "title" : "Never rely on Authority, unless the Authority is I", "created_date" : ISODate("2020-04-23T15:51:16.541Z") },
+{ "_id" : "249979049e9e4088a6325678998331df", "blog_id" : "21ab3abc71c8414082fe8726a3f011bd", "author" : "mark@gfs.com", "content" : "It's not a two-way street in the case of me.", "title" : "The importance of obedience -- but only for you", "created_date" : ISODate("2020-04-23T16:00:17.957Z") },
+{ "_id" : "4547114832824064bff096e340e47855", "blog_id" : "01a17b1f372e49b6a636de63ea98ccd9", "author" : "bill@foo.com", "content" : "Not wanting to offend, I just want to say I'm sorry. Please don't be angry!", "title" : "The joys of groveling", "created_date" : ISODate("2020-04-23T17:47:18.374Z") }
+)

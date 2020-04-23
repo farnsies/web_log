@@ -1,0 +1,51 @@
+This is a project created in conjunction with the Udemy course:
+   The Complete Python Web Course
+      Learn by building 8 apps
+
+This project uses MongoDB and Flask as well as Bootstrap for styling.
+
+=============
+Running the app
+=============
+
+Instructions:
+
+1. Start MongoDB by running 'mongod' in a terminal. If it complains
+   that an instance is already running type 'sudo killall mongod'.
+   Leave the terminal running.
+
+   The application (in database.py) expects to find mongodb running at this
+   URI: "mongodb://127.0.0.1:27017"
+
+2. Start the app in PyCharm by running 'app.py'
+
+3. Direct a browser to 127.0.0.1:5000 and have at it. You should see the
+   login screen saying "Welcome, valued customer" etc.
+
+=============
+Sample Data
+=============
+
+To load sample data, use the load() command as follows:
+
+1. Start MongoDB in a terminal (command: 'mongod'). Leave the terminal running.
+
+2. Start the MongoDB client in a different terminal (command: 'mongo').
+
+4. Select the full-stack database (command: 'use fullstack')
+
+3. Load the data with this (command: 'load(/path/to/sample_data.txt)')
+
+The sample contains two users with the following credentials:
+    mark@gfs.com (pass: pass123)
+    bill@foo.com (pass: pass123)
+
+=============
+Comments
+=============
+
+Of course new users, blogs, and posts can be created. The app can be fully
+navigated by manipulating screen elements, but there is much that can be
+profitably undertaken in the way of improvements to the UX, functionality, and
+robustness. It is, to say the least, a barebones sketch of an app to illustrate
+the workings of flask and Bootstrap for building a web application.
